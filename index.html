@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        img {
+            height: 330px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="500">
+                <img src="https://images.unsplash.com/photo-1721297014914-b6c0d6d612db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://images.unsplash.com/photo-1721297014760-199ae17a7380?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://images.unsplash.com/photo-1721404832661-658016cde3d4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="500">
+                <img src="https://images.unsplash.com/photo-1721297014055-c62b769944c2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxM3x8fGVufDB8fHx8fA%3D%3D"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="500">
+                <img src="https://images.unsplash.com/photo-1721332155545-c7a8005a2581?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="500">
+                <img src="https://plus.unsplash.com/premium_photo-1677654188365-7b466569f123?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMnx8fGVufDB8fHx8fA%3D%3D"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <h2 style="text-align: center;">Products</h2>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1721332149371-fa99da451baa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1721332155545-c7a8005a2581?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1721332155545-c7a8005a2581?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1721332155545-c7a8005a2581?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col" style="margin-top: 50px;">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1721332155545-c7a8005a2581?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2 style="text-align: center; margin: 50px; margin-bottom: 30px;">Blogs</h2>
+        <hr style="height: 2px;">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://images.unsplash.com/photo-1721332155545-c7a8005a2581?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D" alt="" style="height: 225px;">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://images.unsplash.com/photo-1721332155545-c7a8005a2581?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D" alt="" style="height: 225px;">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://images.unsplash.com/photo-1721332155545-c7a8005a2581?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D" alt="" style="height: 225px;">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://images.unsplash.com/photo-1721332155545-c7a8005a2581?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D" alt="" style="height: 225px;">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://images.unsplash.com/photo-1721332155545-c7a8005a2581?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D" alt="" style="height: 225px;">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://images.unsplash.com/photo-1721332155545-c7a8005a2581?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D" alt="" style="height: 225px;">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://images.unsplash.com/photo-1721332155545-c7a8005a2581?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D" alt="" style="height: 225px;">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://images.unsplash.com/photo-1721332155545-c7a8005a2581?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D" alt="" style="height: 225px;">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://images.unsplash.com/photo-1721332155545-c7a8005a2581?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D" alt="" style="height: 225px;">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="container">
+        <h2 style="text-align: center; margin: 50px; margin-bottom: 40px;">Contact Us</h2>
+        <hr style="height: 2px;">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="data:image/png;base64,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"
+                    alt="">
+            </div>
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
