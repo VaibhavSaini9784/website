@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .main {
+            height: 85vh;
+            width: 100vw;
+            border: 0px;
+            display: flex;
+        }
+
+        .left {
+            height: 100%;
+            width: 900px;
+            border: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+        }
+
+        .right {
+            height: 100%;
+            width: 50%;
+            border: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+
+        .part {
+            height: 90%;
+            width: 40%;
+            display: inline-block;
+            border: 0px;
+        }
+
+        .part1 {
+            height: 75%;
+            width: 510px;
+            border: 1px rgb(219, 219, 219) solid;
+        }
+
+        .part2 {
+            height: 9%;
+            width: 510px;
+            margin-top: 2%;
+            border: 1px rgb(219, 219, 219) solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+        }
+
+        .part3 {
+            height: 13.4%;
+            width: 510px;
+            margin-top: 2%;
+            border: 0px;
+        }
+
+        .image1 {
+            height: 28%;
+            width: 100%;
+            border: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .form {
+            height: 36%;
+            width: 100%;
+            border: 0px;
+            display: inline-block;
+        }
+
+        input {
+            font-size: 16px;
+            height: 44px;
+            width: 80%;
+            margin: 3px 36px;
+            padding-left: 10px;
+            background-color: aliceblue;
+            border-width: 0cap;
+        }
+
+        #inp1 {
+            margin-top: 25px;
+        }
+
+        button {
+            color: aliceblue;
+            height: 39px;
+            width: 80%;
+            margin: 12px 36px;
+            border-radius: 10px;
+            background-color: rgb(78, 32, 246);
+            border: 0px;
+            font-size: 20px;
+        }
+
+        .or {
+            height: 10%;
+            width: 100%;
+            font-size: 25px;
+            border: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .flog {
+            height: 13%;
+            width: 100%;
+            font-size: 22px;
+            border: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: blue;
+        }
+
+        .img2 {
+            margin-right: 5px;
+        }
+
+        .forgot {
+            height: 10.5%;
+            width: 100%;
+            font-size: 17px;
+            border: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .get {
+            height: 40%;
+            width: 100%;
+            border: 0px;
+            font-size: 21px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img4 {
+            height: 60%;
+            width: 100%;
+            border: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img3{
+            height: 90%;
+            width: 40%;
+            margin-right: 7px;
+        }
+        .footer {
+            width: 100%;
+            border-color: rgb(219, 219, 219);
+            color: #737373;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .info {
+            margin-top: 32px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            color: #737373;
+            text-align: center;
+        }
+
+        .info1 {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .FooterSpacing {
+            margin: 5px 10px;
+        }
+
+        .Playimage {
+            height: 538.84px;
+            width: 250px;
+            position: absolute;
+        }
+        /* .footer{
+            margin-bottom: 2px;
+            height: 80px;
+            width: 100%;
+            border: 0px;
+            display: inline-block;
+        }
+        .upper{
+            height: 50%;
+            width: 100vw;
+            border:0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .lower{
+            height: 50%;
+            width: 100vw;
+            border: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            font-size: 18px;
+            padding-right: 12px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        } */
+        .sign{
+            color: blue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        @media (max-width:1000px)
+        {
+            .left{
+                display: none;
+            }
+            .part{
+                width: 100%;
+            }
+            .right{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+    
+            }
+            .part1{
+                width: 50%;
+                margin-left: 25%;
+                display: inline-block;
+            }
+            .part2{
+                width: 50%;
+                margin-left: 25%;
+                
+            }
+            .part3{
+                width: 50%;
+                margin-left: 25%;
+                
+            }
+            /* .upper{
+                width: 510px;
+                margin-left: 40%;
+            }
+            .lower{
+                width: 510px;
+                margin-left: 40%;
+            } */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <img src="https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones-2x.png?__makehaste_cache_breaker=73SVAexZgBW" alt="" height="100%" width="60%">
+        </div>
+        <div class="right">
+            <div class="part">
+                <div class="part1">
+                    <div class="image1">
+                        <i data-visualcompletion="css-img" aria-label="Instagram" class="" role="img"
+                            style="background-image: url(&quot;https://static.cdninstagram.com/rsrc.php/v3/yM/r/8n91YnfPq0s.png&quot;); background-position: 0px -52px; background-size: auto; width:220px; height: 51px; background-repeat: no-repeat; display:flex;"></i>
+                    </div>
+                    <div class="form">
+                        <form action="">
+                            <input type="text" placeholder="Phone no.,username,email" id="inp1">
+                            <input type="password" placeholder="Password">
+                            <button>Log in</button>
+                        </form>
+                    </div>
+                    <div class="or">
+                        <span>OR</span>
+                    </div>
+                    <div class="flog">
+                        <div class="img2">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <span>Log in with Facebook</span>
+                    </div>
+                    <div class="forgot">
+                        <span>Forgot password?</span>
+                    </div>
+                </div>
+                <div class="part2">
+                    <span>Dont, have an account?<span class="sign">Sign Up</span></span>
+                </div>
+                <div class="part3">
+                    <div class="get">
+                        <span>Get the app</span>
+                    </div>
+                    <div class="img4">
+                        <div class="img3">
+                            <a aria-label="Get it on Google Play"
+                                href="https://play.google.com/store/apps/details?id=com.instagram.android&amp;referrer=ig_mid%3DF1A166A7-8D77-4310-9FC7-6B5C7858C0AF%26utm_campaign%3DunifiedHome%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge%26original_referrer%3Dhttps%253A%252F%252Fwww.google.com%252F"
+                                rel="nofollow noreferrer" role="link" tabindex="0" target="_blank"><img
+                                    alt="Get it on Google Play" 
+                                    src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" height="100%"
+                                    width="100%"></a>
+                        </div>
+                        <div class="img3">
+                            <a aria-label="Get it from Microsoft"  href="ms-windows-store://pdp/?productid=9nblggh5l9xt&amp;referrer=appbadge&amp;source=www.instagram.com&amp;mode=mini&amp;pos=-10%2C0%2C1940%2C1040" rel="nofollow noreferrer" role="link" tabindex="0" target="_blank"><img alt="Get it from Microsoft"  src="https://static.cdninstagram.com/rsrc.php/v3/yu/r/EHY6QnZYdNX.png" height="100%" width="100%"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="info">
+            <div class="FooterSpacing">Meta</div>
+            <div class="FooterSpacing">About</div>
+            <div class="FooterSpacing">Blogs</div>
+            <div class="FooterSpacing">Jobs</div>
+            <div class="FooterSpacing">Help</div>
+            <div class="FooterSpacing">Api</div>
+            <div class="FooterSpacing">Privacy</div>
+            <div class="FooterSpacing">Terms</div>
+            <div class="FooterSpacing">Locations</div>
+            <div class="FooterSpacing">Instagram Lite</div>
+            <div class="FooterSpacing">Threads</div>
+            <div class="FooterSpacing">Contact Uploading & Non-Users</div>
+            <div class="FooterSpacing">Meta Verified</div>
+        </div>
+        <div class="info1">
+            <div class="FooterSpacing">
+                <label for="language">English
+                    <select name="language" id="language" style="border: none; color: rgb(219, 219, 219);">
+                        <option value="en">English</option>
+                    </select>
+                </label>
+            </div>
+            <div class="FooterSpacing">&#169; 2024 Instagram from Meta</div>
+        </div>
+    </div>
+    <!-- <div class="footer">
+        <div class="upper">
+            <div class="container">
+                <span>Meta</span>
+            </div>
+            <div class="container">
+                <span>About</span>
+            </div>
+            <div class="container">
+                <span>Blog</span>
+            </div>
+            <div class="container">
+                <span>Jobs</span>
+            </div>
+            <div class="container">
+                <span>Help</span>
+            </div>
+            <div class="container">
+                <span>API</span>
+            </div>
+            <div class="container">
+                <span>Privacy</span>
+            </div>
+            <div class="container">
+                <span>Terms</span>
+            </div>
+            <div class="container">
+                <span>Locations</span>
+            </div>
+            <div class="container">
+                <span>Instagram Lite</span>
+            </div>
+            <div class="container">
+                <span>Threads</span>
+            </div>
+            <div class="container">
+                <span>Contact Uploading & Non-Users</span>
+            </div>
+            <div class="container">
+                <span>Meta Verified</span>
+            </div>
+        </div>
+        <div class="lower">
+            <div class="container">
+                <span>English</span>
+            </div>
+            <div class="container">
+                <span>2024 Instagram from Meta</span>
+            </div>
+        </div> -->
+    <!-- </div> -->
+</body>
+
+</html>
